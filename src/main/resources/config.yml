@@ -1,0 +1,8 @@
+Configuration:
+  Parties:
+    Max Size: 8
+
+Messages:
+  No Permission: "&cYou can't use that command!"
+  Usage:
+    - ""
