@@ -3,15 +3,16 @@ package io.thadow.simpleparty.api.party;
 import lombok.Getter;
 import org.bukkit.entity.Player;
 
+import javax.naming.Name;
+
+@Getter
 public class PartyMember {
 
-    @Getter
-    Player player;
-    @Getter
+    String name;
     PartyRole role;
 
-    public PartyMember(Player player, PartyRole role) {
-        this.player = player;
+    public PartyMember(String name, PartyRole role) {
+        this.name = name;
         this.role = role;
     }
 }

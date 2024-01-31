@@ -1,8 +1,32 @@
 Configuration:
   Parties:
+    Default Privacy: PRIVATE
+    On Member Logout:
+      Kick After: 5 # minutes
+    On Leader Logout:
+      Transfer Party:
+        Enabled: true
+      Disband After: 5 # this is only enabled if the transfer party option is disabled
     Max Size: 8
 
 Messages:
   No Permission: "&cYou can't use that command!"
+  Already in a Party: "&cYou're already in a party."
+  Not in a Party: "&cYou're not in a party!"
+  Not the leader: "&cYou're not the leader of the party!"
+  Party created: "&aParty created successfully."
+  Party disbanded: "&cThe party has been disbanded."
   Usage:
-    - ""
+    - "&7----------------------------------------------"
+    - "&dParty"
+    - "&e/party list &7- List of your invitations."
+    - "&e/party public or private &7- Change the privacy of your party."
+    - "&e/party create &7- Create a new party."
+    - "&e/party accept &7- Accept an invitation."
+    - "&e/party deny &7- Deny an invitation."
+    - "&e/party invite &7- Invite a player to your party."
+    - "&e/party kick &7- Kick a member of your party."
+    - "&7/party leader &7- Transfer your party to another player."
+    - "&7/party leave &7- Leave the party."
+    - "&7party disband &7-Disband your party."
+    - "&7----------------------------------------------"

@@ -1,22 +1,23 @@
 package io.thadow.simpleparty.api.party;
 
 import lombok.Getter;
+import lombok.Setter;
 import org.bukkit.entity.Player;
 
 import java.util.List;
 
+@Getter @Setter
 public class Party {
 
-    @Getter
-    Player leader;
-    @Getter
+    String leader;
     List<PartyMember> members;
-    @Getter
+    PartyPrivacy privacy;
     int maxSize;
 
-    public Party(Player leader, List<PartyMember> members, int maxSize) {
+    public Party(String leader, List<PartyMember> members, PartyPrivacy privacy, int maxSize) {
         this.leader = leader;
         this.members = members;
+        this.privacy = privacy;
         this.maxSize = maxSize;
     }
 }

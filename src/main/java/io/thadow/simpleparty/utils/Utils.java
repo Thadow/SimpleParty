@@ -1,6 +1,7 @@
 package io.thadow.simpleparty.utils;
 
 import io.thadow.simpleparty.Main;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 
 import java.sql.Array;
@@ -22,9 +23,7 @@ public class Utils {
         return newList;
     }
 
-    public static String getPermissionDenyMessage() {
-        String message = Main.getInstance().getConfig().getString("Messages.No Permission");
-        message = format(message);
-        return message;
+    public static boolean isPlayer(String s) {
+        return Bukkit.getPlayerExact(s) != null;
     }
 }
